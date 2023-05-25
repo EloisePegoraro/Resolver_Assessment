@@ -13,5 +13,5 @@ Furthermore, in Cucumber, the keyword "Background" is utilized to prevent the re
 
 During Test 2, while examining the third requirement, which states: "Assert that the second list item's value is set to 'List Item 2'," I came across a potential defect. The requirement specifies "List Item 2," but upon inspecting the HTML DOM, I noticed two additional spaces present (following the initial quotation mark and after the number 2). As a result, Test 2 is failing due to this reason. 
 
-For the reports on the passed/failed tests refer to the file: Cucumber Reports.html
+For the reports on the passed/failed tests, please refer to the file: Cucumber Reports.html
 

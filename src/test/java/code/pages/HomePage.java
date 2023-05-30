@@ -23,8 +23,7 @@ public class HomePage extends CommonMethods {
     private WebElement signInButton;
     @FindBy(xpath="//*[@id='test-2-div']/ul/li")
     private List<WebElement> listGroup;
-    @FindBy(xpath="//*[@id='test-2-div']/ul/li[2]")
-    private WebElement listItem2;
+
     @FindBy(xpath="//*[@id='test-2-div']/ul/li[2]/span")
     private WebElement listItem2Badge;
     @FindBy(id="dropdownMenuButton")
@@ -59,11 +58,11 @@ public class HomePage extends CommonMethods {
     public void itemsListGroup(int qtyItems){
         System.out.println(listGroup.size());
         Assert.assertEquals("Expected 3 items in the list group",qtyItems, listGroup.size());
+
     }
     public void secondItemValue(String item2){
-        System.out.println(listItem2.getText());
-        Assert.assertEquals("Expected text not matching",item2, listItem2.getText());
-
+        System.out.println(listGroup.get(1).getText());
+        Assert.assertEquals("Expected text not matching",item2, listGroup.get(1).getText());
     }
     public void secondItemBadgeValue(String item2Badge){
         Assert.assertEquals(item2Badge, listItem2Badge.getText());

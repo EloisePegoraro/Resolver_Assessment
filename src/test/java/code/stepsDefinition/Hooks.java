@@ -3,8 +3,8 @@ package code.stepsDefinition;
 import code.utils.CommonMethods;
 import code.utils.Driver;
 import io.cucumber.java.Scenario;
-import org.junit.After;
-import org.junit.Before;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
